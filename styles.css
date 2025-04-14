@@ -203,61 +203,6 @@ p {
     background: #0056b3;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-    }
-
-    main {
-        padding: 1.5rem;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
-
-    h2 {
-        font-size: 1.4rem;
-    }
-
-    h3 {
-        font-size: 1.2rem;
-    }
-
-    .image-gallery img {
-        max-width: 150px;
-        height: 150px;
-    }
-
-    .skills ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .skills li {
-        width: 80%;
-        text-align: center;
-    }
-
-    .projects-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 480px) {
-    main {
-        padding: 1rem;
-    }
-
-    .cta .btn {
-        display: block;
-        width: 80%;
-        margin: 0.5rem auto;
-    }
-}
 /* Section: Academics */
 .academics {
     padding: 2rem 0;
@@ -334,42 +279,6 @@ p {
     transition: width 0.5s ease;
 }
 
-/* Responsive Design Updates */
-@media (max-width: 768px) {
-    .academics li {
-        display: block;
-        width: 80%;
-        margin: 0.5rem auto;
-    }
-
-    .classes ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .classes li {
-        width: 80%;
-        text-align: center;
-    }
-
-    .gpa-number {
-        font-size: 1.2rem;
-    }
-
-    .progress-bar {
-        width: 90%;
-    }
-}
-
-@media (max-width: 480px) {
-    .academics li {
-        width: 90%;
-    }
-
-    .classes li {
-        width: 90%;
-    }
-}
 /* Section: Graduation */
 .graduation {
     text-align: center;
@@ -406,32 +315,79 @@ p {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
-/* Section: Book List */
-.book-list {
+/* Section: Further Studies */
+.further-studies {
     padding: 2rem 0;
     text-align: center;
 }
 
-.book-list ul {
-    list-style: none;
-    padding: 0;
-    margin: 1rem 0;
-}
-
-.book-list li {
-    font-size: 1rem;
-    margin: 0.5rem 0;
-    background: #e0e0e0;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    display: block;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Responsive Design Updates */
+/* Responsive Design */
 @media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    main {
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    .image-gallery img {
+        max-width: 150px;
+        height: 150px;
+    }
+
+    .skills ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills li {
+        width: 80%;
+        text-align: center;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .academics li {
+        display: block;
+        width: 80%;
+        margin: 0.5rem auto;
+    }
+
+    .classes ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .classes li {
+        width: 80%;
+        text-align: center;
+    }
+
+    .gpa-number {
+        font-size: 1.2rem;
+    }
+
+    .progress-bar {
+        width: 90%;
+    }
+
     .graduation-date {
         font-size: 2rem;
     }
@@ -440,18 +396,28 @@ p {
         padding: 1rem;
         margin: 0.5rem;
     }
-
-    .book-list li {
-        width: 80%;
-    }
 }
 
 @media (max-width: 480px) {
-    .graduation-date {
-        font-size: 1.5rem;
+    main {
+        padding: 1rem;
     }
 
-    .book-list li {
+    .cta .btn {
+        display: block;
+        width: 80%;
+        margin: 0.5rem auto;
+    }
+
+    .academics li {
         width: 90%;
+    }
+
+    .classes li {
+        width: 90%;
+    }
+
+    .graduation-date {
+        font-size: 1.5rem;
     }
 }
