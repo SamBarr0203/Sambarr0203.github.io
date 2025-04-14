@@ -280,6 +280,77 @@ p {
     color: #1E3A8A; /* Dark Blue */
 }
 
+/* Section: Academics */
+.academics {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.achievement-label {
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #1F2937; /* Dark Gray */
+    background-color: #E5E7EB; /* Light Gray */
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Section: Classes */
+.classes {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.underlined {
+    text-decoration: underline;
+}
+
+.class-list {
+    margin-top: 1rem;
+}
+
+.class-item {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #1F2937; /* Dark Gray */
+    margin: 0.5rem 0;
+}
+
+/* Section: GPA */
+.gpa {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+/* Section: Progress */
+.progress {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.progress-bar {
+    width: 50%;
+    height: 20px;
+    background-color: #E5E7EB; /* Light Gray */
+    border-radius: 10px;
+    margin: 1rem auto;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: #3B82F6; /* Sky Blue */
+    transition: width 0.3s ease;
+}
+
+.progress p {
+    font-size: 1rem;
+    color: #1F2937; /* Dark Gray */
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     nav ul {
@@ -335,6 +406,10 @@ p {
     .graduation-date {
         font-size: 2rem;
     }
+
+    .progress-bar {
+        width: 70%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -364,5 +439,9 @@ p {
 
     .graduation-date {
         font-size: 1.5rem;
+    }
+
+    .progress-bar {
+        width: 90%;
     }
 }
