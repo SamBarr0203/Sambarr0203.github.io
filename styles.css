@@ -258,3 +258,115 @@ p {
         margin: 0.5rem auto;
     }
 }
+/* Section: Academics */
+.academics {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.academics ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.academics li {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    background: #e0e0e0;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Section: Classes */
+.classes {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.classes ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0;
+}
+
+.classes li {
+    background: #e0e0e0;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+/* Section: GPA */
+.gpa {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.gpa-number {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Section: Progress Bar */
+.progress {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.progress-bar {
+    width: 80%;
+    height: 20px;
+    background: #e0e0e0;
+    border-radius: 10px;
+    margin: 1rem auto;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: #007bff;
+    transition: width 0.5s ease;
+}
+
+/* Responsive Design Updates */
+@media (max-width: 768px) {
+    .academics li {
+        display: block;
+        width: 80%;
+        margin: 0.5rem auto;
+    }
+
+    .classes ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .classes li {
+        width: 80%;
+        text-align: center;
+    }
+
+    .gpa-number {
+        font-size: 1.2rem;
+    }
+
+    .progress-bar {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .academics li {
+        width: 90%;
+    }
+
+    .classes li {
+        width: 90%;
+    }
+}
