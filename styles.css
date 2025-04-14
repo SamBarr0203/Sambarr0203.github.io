@@ -112,6 +112,12 @@ p {
     transform: scale(1.05);
 }
 
+/* Section: Soccer and Cybersecurity */
+.soccer-cybersecurity {
+    padding: 2rem 0;
+    text-align: center;
+}
+
 /* Section: Skills */
 .skills {
     text-align: center;
@@ -145,8 +151,8 @@ p {
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 1.5rem;
-    max-width: 600px; /* Increased slightly for better readability */
-    margin: 1rem auto; /* Added margin to separate projects */
+    max-width: 600px;
+    margin: 1rem auto;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease;
 }
@@ -169,8 +175,8 @@ p {
 
 .project-image {
     width: 100%;
-    max-width: 400px; /* Constrain image width */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 400px;
+    height: auto;
     border-radius: 8px;
     margin: 0 auto;
     display: block;
@@ -368,11 +374,11 @@ p {
     }
 
     .project-single {
-        max-width: 100%; /* Full width on smaller screens */
+        max-width: 100%;
     }
 
     .project-image {
-        max-width: 300px; /* Smaller image on smaller screens */
+        max-width: 300px;
     }
 
     .academics li {
@@ -426,7 +432,7 @@ p {
     }
 
     .project-image {
-        max-width: 250px; /* Even smaller on very small screens */
+        max-width: 250px;
     }
 
     .academics li {
