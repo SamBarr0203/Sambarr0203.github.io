@@ -17,6 +17,11 @@ header {
     background-color: #1E3A8A; /* Dark Blue */
     padding: 1rem 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Make header sticky */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure header stays above other content */
 }
 
 nav ul {
@@ -58,6 +63,7 @@ main {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    padding-top: 5rem; /* Add padding to account for fixed header height */
 }
 
 /* Section: About */
@@ -395,6 +401,7 @@ h1 i, h3 i {
 
     main {
         padding: 1.5rem;
+        padding-top: 8rem; /* Adjust for header height on smaller screens */
     }
 
     h1 {
@@ -449,6 +456,7 @@ h1 i, h3 i {
 @media (max-width: 480px) {
     main {
         padding: 1rem;
+        padding-top: 10rem; /* Adjust for header height on very small screens */
     }
 
     nav a i {
