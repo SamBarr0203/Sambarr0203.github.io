@@ -78,6 +78,7 @@ h1 {
 h2 {
     font-size: 1.8rem;
     margin: 2rem 0 1rem;
+    text-align: center; /* Ensure all h2 headings are centered */
 }
 
 h3 {
@@ -184,6 +185,16 @@ p {
     text-decoration: underline;
 }
 
+/* Adjust project images to fit within the project box */
+.project-single img {
+    width: 100%;
+    max-width: 200px; /* Reduce size to fit better in the project box */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
 .qr-code {
     margin-top: 1rem;
     text-align: center;
@@ -229,6 +240,46 @@ p {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
+/* Section: Current Endeavors */
+.current-endeavors {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.current-endeavors h2 {
+    text-align: center;
+    margin: 0 auto 1rem;
+}
+
+/* Section: Looking Forward */
+.looking-forward {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.looking-forward h2 {
+    text-align: center;
+    margin: 0 auto 1rem;
+}
+
+/* Section: Graduation */
+.graduation {
+    text-align: center;
+    padding: 2rem 0;
+    background: #f0f0f0;
+}
+
+.graduation h2 {
+    text-align: center;
+    margin: 0 auto 1rem;
+}
+
+.graduation-date {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #1E3A8A; /* Dark Blue */
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     nav ul {
@@ -272,9 +323,17 @@ p {
         max-width: 100%;
     }
 
+    .project-single img {
+        max-width: 150px; /* Further reduce for smaller screens */
+    }
+
     .qr-code img {
         width: 80px;
         height: 80px;
+    }
+
+    .graduation-date {
+        font-size: 2rem;
     }
 }
 
@@ -289,6 +348,10 @@ p {
         margin: 0.5rem auto;
     }
 
+    .project-single img {
+        max-width: 120px; /* Even smaller for very small screens */
+    }
+
     .qr-code img {
         width: 60px;
         height: 60px;
@@ -297,5 +360,9 @@ p {
     .image-gallery img {
         max-width: 175px;
         height: 175px;
+    }
+
+    .graduation-date {
+        font-size: 1.5rem;
     }
 }
