@@ -203,6 +203,10 @@ p {
     text-decoration: underline;
 }
 
+.project-links a {
+    margin-bottom: 0.5rem; /* Add spacing between the button and link */
+}
+
 /* Adjust project images to fit within the project box */
 .project-single img {
     width: 100%;
