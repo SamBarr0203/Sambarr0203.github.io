@@ -396,8 +396,6 @@ h1 i, h3 i {
     }
 
     nav ul {
-        flex-direction: column;
-        align-items: center;
         gap: 0.8rem;
         padding: 0.5rem;
     }
@@ -405,8 +403,6 @@ h1 i, h3 i {
     nav a {
         font-size: 0.9rem;
         padding: 0.5rem;
-        width: 100%;
-        text-align: center;
     }
 
     nav a i {
