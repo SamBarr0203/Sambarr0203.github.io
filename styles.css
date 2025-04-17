@@ -10,6 +10,8 @@ body {
     line-height: 1.6;
     background-color: #F8FAFC; /* Light Gray/White */
     color: #1F2937; /* Dark Gray */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 /* Header & Navigation */
@@ -17,11 +19,11 @@ header {
     background-color: #1E3A8A; /* Dark Blue */
     padding: 1rem 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    position: fixed; /* Make header sticky */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000; /* Ensure header stays above other content */
+    z-index: 1000;
 }
 
 nav ul {
@@ -29,23 +31,24 @@ nav ul {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 1.5rem;
     max-width: 900px;
     margin: 0 auto;
     padding: 0 1rem;
 }
 
 nav a {
-    color: #F8FAFC; /* Light Gray/White */
+    color: #F8FAFC;
     text-decoration: none;
     font-weight: bold;
     padding: 0.5rem 1rem;
     transition: color 0.3s ease, background-color 0.3s ease;
+    font-size: 1rem;
 }
 
 nav a:hover {
-    color: #F8FAFC; /* Light Gray/White */
-    background-color: #2563EB; /* Royal Blue */
+    color: #F8FAFC;
+    background-color: #2563EB;
     border-radius: 4px;
 }
 
@@ -63,7 +66,7 @@ main {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    padding-top: 5rem; /* Add padding to account for fixed header height */
+    padding-top: 5rem;
 }
 
 /* Section: About */
@@ -75,11 +78,11 @@ main {
 .about h2 {
     font-style: italic;
     margin-bottom: 1.5rem;
-    color: #1E3A8A; /* Dark Blue */
+    color: #1E3A8A;
 }
 
 h1, h2, h3 {
-    color: #1E3A8A; /* Dark Blue */
+    color: #1E3A8A;
 }
 
 h1 {
@@ -96,7 +99,7 @@ h1 i, h3 i {
 h2 {
     font-size: 1.8rem;
     margin: 2rem 0 1rem;
-    text-align: center; /* Ensure all h2 headings are centered */
+    text-align: center;
 }
 
 h3 {
@@ -155,8 +158,8 @@ p {
 }
 
 .skills li {
-    background: #3B82F6; /* Sky Blue */
-    color: #F8FAFC; /* Light Gray/White */
+    background: #3B82F6;
+    color: #F8FAFC;
     padding: 0.5rem 1rem;
     border-radius: 5px;
     font-size: 0.9rem;
@@ -164,7 +167,7 @@ p {
 }
 
 .skills li:hover {
-    background: #2563EB; /* Royal Blue */
+    background: #2563EB;
 }
 
 /* Section: Projects */
@@ -192,25 +195,24 @@ p {
 .project-single a {
     display: inline-block;
     margin: 1rem 0;
-    color: #2563EB; /* Royal Blue */
+    color: #2563EB;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .project-single a:hover {
-    color: #1E3A8A; /* Dark Blue */
+    color: #1E3A8A;
     text-decoration: underline;
 }
 
 .project-links a {
-    margin-bottom: 0.5rem; /* Add spacing between the button and link */
+    margin-bottom: 0.5rem;
 }
 
-/* Adjust project images to fit within the project box */
 .project-single img {
     width: 100%;
-    max-width: 200px; /* Reduce size to fit better in the project box */
+    max-width: 200px;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -239,15 +241,15 @@ p {
     display: inline-block;
     padding: 0.8rem 2rem;
     margin: 0.5rem;
-    background: #3B82F6; /* Sky Blue */
-    color: #F8FAFC; /* Light Gray/White */
+    background: #3B82F6;
+    color: #F8FAFC;
     text-decoration: none;
     border-radius: 5px;
     transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .cta .btn:hover {
-    background: #2563EB; /* Royal Blue */
+    background: #2563EB;
     transform: scale(1.05);
 }
 
@@ -299,7 +301,7 @@ p {
 .graduation-date {
     font-size: 3rem;
     font-weight: bold;
-    color: #1E3A8A; /* Dark Blue */
+    color: #1E3A8A;
 }
 
 /* Section: Academics */
@@ -312,8 +314,8 @@ p {
     display: inline-block;
     font-size: 1.2rem;
     font-weight: 500;
-    color: #1F2937; /* Dark Gray */
-    background-color: #E5E7EB; /* Light Gray */
+    color: #1F2937;
+    background-color: #E5E7EB;
     padding: 0.5rem 1rem;
     margin: 0.5rem;
     border-radius: 5px;
@@ -337,7 +339,7 @@ p {
 .class-item {
     font-size: 1rem;
     font-weight: bold;
-    color: #1F2937; /* Dark Gray */
+    color: #1F2937;
     margin: 0.5rem 0;
 }
 
@@ -356,7 +358,7 @@ p {
 .progress-bar {
     width: 50%;
     height: 20px;
-    background-color: #E5E7EB; /* Light Gray */
+    background-color: #E5E7EB;
     border-radius: 10px;
     margin: 1rem auto;
     overflow: hidden;
@@ -364,52 +366,66 @@ p {
 
 .progress-fill {
     height: 100%;
-    background-color: #3B82F6; /* Sky Blue */
+    background-color: #3B82F6;
     transition: width 0.3s ease;
 }
 
 .progress p {
     font-size: 1rem;
-    color: #1F2937; /* Dark Gray */
+    color: #1F2937;
 }
 
 /* Icon Styling */
 i.fas, i.fab {
-    color: #1E3A8A; /* Dark Blue */
+    color: #1E3A8A;
     transition: color 0.3s ease;
 }
 
 nav a:hover i {
-    color: #F8FAFC; /* Light Gray/White */
+    color: #F8FAFC;
 }
 
 h1 i, h3 i {
-    color: #1E3A8A; /* Match header color */
+    color: #1E3A8A;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    header {
+        padding: 0.5rem 0;
+    }
+
     nav ul {
         flex-direction: column;
         align-items: center;
-        gap: 1rem;
+        gap: 0.8rem;
+        padding: 0.5rem;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+        width: 100%;
+        text-align: center;
     }
 
     nav a i {
         font-size: 0.9rem;
     }
 
-    h1 i, h3 i {
-        font-size: 1rem;
-    }
-
     main {
-        padding: 1.5rem;
-        padding-top: 8rem; /* Adjust for header height on smaller screens */
+        margin: 1rem;
+        padding: 1rem;
+        padding-top: 6rem;
+        border-radius: 6px;
     }
 
     h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
+    }
+
+    h1 i, h3 i {
+        font-size: 1rem;
     }
 
     h2 {
@@ -417,30 +433,51 @@ h1 i, h3 i {
     }
 
     h3 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .about, .soccer-cybersecurity, .skills, .projects, .cta, .current-endeavors, .looking-forward, .graduation, .academics, .classes, .gpa, .progress {
+        padding: 1rem 0;
+    }
+
+    .image-gallery {
+        gap: 1rem;
     }
 
     .image-gallery img {
-        max-width: 225px;
-        height: 225px;
+        max-width: 200px;
+        height: 200px;
     }
 
     .skills ul {
         flex-direction: column;
         align-items: center;
+        gap: 0.5rem;
     }
 
     .skills li {
-        width: 80%;
+        width: 70%;
         text-align: center;
+        font-size: 0.85rem;
+        padding: 0.4rem 0.8rem;
     }
 
     .project-single {
         max-width: 100%;
+        padding: 1rem;
+        margin: 0.5rem auto;
     }
 
     .project-single img {
-        max-width: 150px; /* Further reduce for smaller screens */
+        max-width: 150px;
+    }
+
+    .project-links a {
+        font-size: 0.9rem;
     }
 
     .qr-code img {
@@ -448,37 +485,100 @@ h1 i, h3 i {
         height: 80px;
     }
 
+    .cta .btn {
+        padding: 0.6rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .text-box {
+        padding: 1rem;
+        margin: 0.5rem auto;
+        max-width: 100%;
+    }
+
     .graduation-date {
         font-size: 2rem;
     }
 
+    .achievement-label {
+        font-size: 1rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .class-item {
+        font-size: 0.9rem;
+    }
+
     .progress-bar {
         width: 70%;
+        height: 16px;
+    }
+
+    .progress p {
+        font-size: 0.9rem;
     }
 }
 
 @media (max-width: 480px) {
-    main {
-        padding: 1rem;
-        padding-top: 10rem; /* Adjust for header height on very small screens */
+    header {
+        padding: 0.3rem 0;
+    }
+
+    nav a {
+        font-size: 0.85rem;
+        padding: 0.4rem;
     }
 
     nav a i {
         font-size: 0.8rem;
     }
 
+    main {
+        margin: 0.5rem;
+        padding: 0.5rem;
+        padding-top: 8rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
     h1 i, h3 i {
         font-size: 0.9rem;
     }
 
-    .cta .btn {
-        display: block;
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.85rem;
+    }
+
+    .image-gallery img {
+        max-width: 150px;
+        height: 150px;
+    }
+
+    .skills li {
         width: 80%;
-        margin: 0.5rem auto;
+        font-size: 0.8rem;
+    }
+
+    .project-single {
+        padding: 0.8rem;
     }
 
     .project-single img {
-        max-width: 120px; /* Even smaller for very small screens */
+        max-width: 120px;
+    }
+
+    .project-links a {
+        font-size: 0.85rem;
     }
 
     .qr-code img {
@@ -486,16 +586,37 @@ h1 i, h3 i {
         height: 60px;
     }
 
-    .image-gallery img {
-        max-width: 175px;
-        height: 175px;
+    .cta .btn {
+        display: block;
+        width: 80%;
+        margin: 0.5rem auto;
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+    }
+
+    .text-box {
+        padding: 0.8rem;
     }
 
     .graduation-date {
         font-size: 1.5rem;
     }
 
+    .achievement-label {
+        font-size: 0.9rem;
+        padding: 0.3rem 0.6rem;
+    }
+
+    .class-item {
+        font-size: 0.85rem;
+    }
+
     .progress-bar {
-        width: 90%;
+        width: 80%;
+        height: 14px;
+    }
+
+    .progress p {
+        font-size: 0.85rem;
     }
 }
